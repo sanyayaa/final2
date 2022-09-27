@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="location.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>NAARI</title>
+</head>
+<body>
+  <br>
+  <br>
+
+
+<section id="title">
+    <div class="container-fluid"> 
+      <!-- Nav Bar -->
+       <nav class="navbar navbar-expand-lg navbar-dark "> 
+
+        <a class="navbar-brand" href="#">
+          <img src="photo.jpeg" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">NAARI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="map.html">Navigation</a> 
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">Safety Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+
+            <div class="mx-2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">SIGN UP</button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginmodal">LOGIN</button>
+            </div>
+      </nav>
+
+      <!-- Title -->
+       <div class="row">
+        <div class="col-lg-6">
+          <h1>
+            Are you in TROUBLE?
+          </h1>
+          
+          <button type="button" class="btn btn-danger btn-lg btn-download"> <a style="color: white;" class="nav-link" href="map.html"> <b>I'm in DANGER</b></a></button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-download"> Show me more</button>
+        </div>
+
+      </div>
+    </div>
+  </section> 
+
+
+
+<!-- <div class="maincontainer"> -->
+  <!-- <div id="logger"></div> -->
+
+    <!-- NAV BAR -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" class="py-8" >
+
+      <a class="navbar-brand" href="#">
+        <img src="photo.jpeg" width="40" height="40" alt="">
+      </a>
+        
+            
+          
+        <a class="navbar-brand" href="#"><b>NAARI</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="map.html">Navigation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="safety.html">Safety Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+
+            
+            
+          </ul>
+          
+          <div class="mx-2">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">SIGN UP</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginmodal">LOGIN</button>
+          </div>
+          
+        </div>
+      </nav> 
+    <div class="row">
+        <div class="col-lg-7">
+          <h1>
+            Are you in TROUBLE?
+          </h1>
+          
+          <button type="button" class="btn btn-danger btn-lg btn-download"><i class="fab fa-apple"></i> I'm in DANGER</button>
+          <button type="button" class="btn btn-outline-light btn-lg btn-download"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+<!-- <p style="font-weight:1000; font-size: 30px;" ARE YOU IN TROUBLE?</p> -->
+      <!-- <button type="button" class="btn btn-danger btn-lg" style="margin-left:5%; margin-top: 30%;">I'm in DANGER</button> -->
+
+      <!--MODAL FOR SIGNUP-->
+<!-- Modal -->
+<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupmodal" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupmodal">SIGN UP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group">
+            <label for="exampleInputName1">Your Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp">
+            
+          </div>
+
+
+
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label for="cexampleInputPassword1"> Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--MODAL FOR LOGININ-->
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginmodal">LOGININ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">LOGIN</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+
+
+      
+<div class="card-group" style="padding:4% 11% 0 11%">
+  <div class="card">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card mx-2">
+    <img src="my-wife-doesnt-work-poster1.jpg" class="card-img-top" alt="..." width=300px height=400px>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+ 
+
+<br>
+<br>
+
+<div class="menu text-center">
+      <div class="container">
+        <div class="box">
+          <div class="content">
+            <img src="webd.png" />
+            <p>
+              Web development is the work involved in developing a website for
+              the Internet or an intranet.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="datascience.jpg" />
+            <p>
+              A data scientist is a professional responsible for collecting,
+              analyzing and interpreting extremely large amounts of data
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="computervision.jpg" />
+            <p>
+              Computer vision is a field of artificial intelligence (AI) that
+              enables computers and systems to derive meaningful information
+              from digital images, videos and other visual inputs
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="campus.jpg" />
+            <p>
+              Campus ambassador programmes provide college students with a
+              platform to become a brand's representative.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="BlockChain-Developer-Duple-IT-Solutions-1.png" />
+            <p>
+              A blockchain developer is a software developer who focuses on
+              blockchain technology. Developers program, develop, and test
+              software and systems.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img
+              src="png-transparent-product-manager-product-management-self-improvement-text-logo-business-thumbnail.png"
+            />
+            <p>
+              An entrepreneur in residence is a temporary role where the
+              individual provides a company with their expertise
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="app-development-concept-illustration_114360-5164.jpg" />
+            <p>
+              An app developer's typical responsibilities include coding,
+              designing, application management, troubleshooting, monitoring
+              updates and possible security threats, and providing end user
+              support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+
+<!--<footer class="blog-footer">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer> -->
+<footer>
+  <a href="#">FAQ</a>    
+  <a href="#">CONTACT US</a>    
+  <a href="#">TERMS OF USE</a>       
+  <a class="copyright" href="#">&COPY: 2022 | NAARI</a>    
+     
+</footer>
+
+
+
+
+
+
+          <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
